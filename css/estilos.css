@@ -1,0 +1,240 @@
+
+body p, h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+
+}
+body a, a:link, a:hover {
+  text-decoration: none;
+}
+
+
+.box_sucursal{
+  cursor: pointer;
+}
+
+.box_sucursal:hover{
+  cursor: pointer;
+  background-color:#fff7f8;
+  
+}
+
+
+
+.logo_iris{
+  width: 70px;
+}
+
+.dorado {
+  color: #eeb10e;
+}
+
+
+.contenedor_cabezal{
+  width: 1068px;
+  padding:15px;
+  box-sizing: border-box;
+  background: white;
+  
+  
+}
+
+.contenedor_cuerpo{
+  background: white;
+  margin-bottom: 15px; 
+}
+
+.degradado {
+  background: linear-gradient(180deg, #072960 0%, rgba(255, 255, 255, 0) 100%), #92180c;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.cuadro_forma{
+  width: 600px;
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  padding: 50px;
+-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
+}
+
+
+.sombra {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
+}
+
+.box_calendario {
+    width: 130px;
+    height: 100px;
+    border: solid 1px #660000;
+    background: white;
+    color: #660000;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.4em;
+    cursor: pointer;
+   
+
+}
+
+.box_calendario:hover{
+    background: #660000;
+    color:#fff;
+    cursor: pointer;
+  }
+
+
+.box_calendario_ocupado{
+    background: #660000;
+    color:#fff;
+    cursor: pointer;
+  }
+
+.box_calendario_apartado{
+    background: #ffcc00;
+    color:#660000;
+    cursor: pointer;
+  }
+
+
+
+.menu_lateral{
+  padding-top: 30px;
+  width: 70px;
+  min-height: 725px;
+  height: 100%;
+}
+
+
+.box_circule{
+    width: 50px;
+    height: 50px;
+    font-size: 2.3em;
+    float: left;
+    background-color: #8a1e04;
+}
+
+
+ .cuadros_menus {
+               
+    width: 120px;
+    height: 120px;
+    background-color: #072960;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+    cursor: pointer;
+   
+    text-align: center;           
+    }
+
+
+  .cuadros_menus:hover{
+      color:#8a1e04;
+      background-color: #8a1e04; 
+    }
+
+  .contendor_titulo {
+              font-family: 'Oswald', sans-serif;
+             font-size: 1em;
+             margin-bottom: 10px;
+             font-weight: bold;
+           }
+
+ .icono_zona{
+          color:#fff;
+          font-size: 4em;
+          display: flex;
+        }
+
+.fondo{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d3d2d0+0,e5e1e2+100 */
+background: #d3d2d0; /* Old browsers */
+background: linear-gradient(to bottom,  #fff 0%,#fff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+margin-bottom: 100px;
+
+}
+
+
+/* Colores */
+
+.rojo_obscuro {
+  color:#660000;
+}
+
+.rojo_obscuro_btn {
+  background-color:#660000;
+  
+}
+ .color_rojo_suave {
+    background-color:#fff7f8;
+  }
+
+  .color_rojo_suave input {
+    background-color:#fff7f8;
+  }
+
+.color_inpurs {
+  color: #f9bdc4;
+}
+
+.gris_claro {
+  color: #002d62;
+  font-size: .8em;
+}
+
+.titulo_seccion {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+ .border_seccion{
+  border-bottom: solid 3px #660000;
+
+}
+
+
+
+h1, h2, h3 {
+   margin:0px; margin:0px;
+   line-height: 10px;
+}
+
+.iconos_menu  a {
+  color:#8a1e04;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.iconos_menu  a:hover {
+  color:#ffcc00;
+  font-size: 1.7em;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/*
+.active {
+  color:#ffcc00;
+  font-size: 1em;
+  
+
+}
+*/
+.user_text{
+  font-size: 25px;
+  color:#fff;
+  padding: 5px;                                                                                                             
+}
+
+.azul_iris_fondo {
+    background: #8a1e04;
+}

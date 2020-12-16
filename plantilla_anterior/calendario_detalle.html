@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="icon_logo.gif">
+    <title>Alfa Logistics MX 
+  </title>
+
+    <!-- Bootstrap core CSS -->
+    <link async href="css/bootstrap.css" rel="stylesheet">
+    
+    <link  async rel="stylesheet" href="css/estilos.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link rel="stylesheet" href="js/popper.min.js">
+    
+  </head>
+ 
+  <body>
+  
+
+
+  <!-- Content here -->          
+<div class="container border border-secondary">
+  <div class="row bg-dark">
+              <div class="col-md-4 d-none d-md-block"><img src="imagenes/logo.png" alt="IRIS" class="logo_iris"></div>
+              <div class="col-sm-6 col-md-4 text-center user_text"> <span class="gris_claro">Bienvenido:</span> Jhon Doe </div>  
+              <div class="col-sm-6 col-md-4 iconos_menu ">
+                <div class="text-center">
+                <a href="menus_cuadros.html"><i class="fas fa-th"></i></a>
+                <a href="#"><i class="fas fa-user-cog"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-question-circle"></i></a>                                  
+                </div>
+              </div>   
+  </div>
+  <div class="row">
+    <div class="d-flex flex-row">
+   <div class="d-flex flex-row">
+      <div> 
+        <div class="menu_lateral iconos_menu degradado ">
+        
+         <a href="unidades_calendario.html" ><i class="far fa-calendar m-3 active" data-toggle="tooltip" data-placement="right" title="Calendario"></i></a>
+        
+             
+    </div>
+  </div> 
+      
+      <!--Segunda columna-->
+      <div class=""> 
+        <div class="contenedor_cabezal  border_seccion bg-white">
+          <div class="float-right m-3"><a href="unidades.html"><i class="fas fa-chevron-left rojo_obscuro fa-2x"></i></a></div>
+          <h1 class="text-center rojo_obscuro titulo_seccion mt-3 mb-3">Calendario de la  Unidad </h1>
+          <h3 class="text-center m-3 p-2 ">Listado de eventos </h3>
+         
+      </div>
+      <div class="text-white rojo_obscuro_btn">
+        <div><h3 class="text-center p-3">Octubre</h3></div>
+
+      </div>
+      <!-- comienza calendario-->
+
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-primary m-2" id="plus_evento"> <i class="fas fa-plus-circle fa-lg "></i> Añadir Evento</button>
+      </div>
+      <div class="d-flex flex-column m-2 p-2">
+      
+      <div class="card text-white bg-success mb-3" id="editar_evento">
+            <div class="card-header d-flex justify-content-between">
+            <div class="d-flex"><i class="fas fa-plus-circle fa-3x p-2"></i>
+            <input type="date" class="form-control p-2 mt-3"> </div>        
+            <div class="d-flex">
+            <div><a href="#" class="text-white"> <i class="fas fa-edit p-2"></i></a></div>
+            <div><a href="#" class="text-white"><i class="fas fa-times p-2"></i></a></div>
+            </div>
+
+            </div>
+            <div class="card-body bg-light text-dark">
+            <h5 class="card-title"> <input type="text" class="form-control p-2" placeholder="Entrar titulo del evento"></h5>
+            <p class="card-text"> 
+              <textarea class="form-control" cols="6" rows="5"></textarea>
+            </p>
+            <button class=" btn bg-success text-white">Guardar los cambios</button>
+            <button class=" btn bg-danger text-white" id="close_editar">Cancelar</button>
+          </div>
+      </div>
+
+
+
+
+
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-header d-flex justify-content-between">
+            <div class="p-2"><i class="far fa-calendar fa-lg"  title="Calendario"></i> 
+            Octubre 20 2020 </div>
+            <div class="d-flex">
+            <div><a href="#" class="text-white"> <i class="fas fa-edit p-2"></i></a></div>
+            <div><a href="#" class="text-white"><i class="fas fa-times p-2"></i></a></div>
+            </div>
+            </div>
+            <div class="card-body bg-light text-dark">
+            <h5 class="card-title">Viaje a San Luis de  unidad RX/000123</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dicta in quam, modi laborum atque minima officia error, ipsam facere adipisci dignissimos a ducimus fugit libero eius voluptatibus doloribus. Quisquam?</p>
+          </div>
+      </div>
+
+          
+        <div class="card text-white bg-danger mb-3">
+            <div class="card-header d-flex justify-content-between">
+            <div class="p-2"><i class="far fa-calendar fa-lg"  title="Calendario"></i> 
+            Octubre 20 2020 </div>
+            <div class="d-flex">
+            <div><a href="#" class="text-white"> <i class="fas fa-edit p-2"></i></a></div>
+            <div><a href="#" class="text-white"><i class="fas fa-times p-2"></i></a></div>
+            </div>
+            </div>
+            <div class="card-body bg-light text-dark">
+            <h5 class="card-title">Viaje a San Luis de  unidad RX/000123</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dicta in quam, modi laborum atque minima officia error, ipsam facere adipisci dignissimos a ducimus fugit libero eius voluptatibus doloribus. Quisquam?</p>
+          </div>
+      </div>
+          
+         <div class="card text-white bg-info mb-3">
+            <div class="card-header d-flex justify-content-between">
+            <div class="p-2"><i class="far fa-calendar fa-lg"  title="Calendario"></i> 
+            Octubre 20 2020 </div>
+            <div class="d-flex">
+            <div><a href="#" class="text-white"> <i class="fas fa-edit p-2"></i></a></div>
+            <div><a href="#" class="text-white"><i class="fas fa-times p-2"></i></a></div>
+            </div>
+            </div>
+            <div class="card-body bg-light text-dark">
+            <h5 class="card-title">Viaje a San Luis de  unidad RX/000123</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dicta in quam, modi laborum atque minima officia error, ipsam facere adipisci dignissimos a ducimus fugit libero eius voluptatibus doloribus. Quisquam?</p>
+          </div>
+      </div>
+
+      <div class="card text-white bg-warning mb-3">
+            <div class="card-header d-flex justify-content-between">
+            <div class="p-2"><i class="far fa-calendar fa-lg"  title="Calendario"></i> 
+            Octubre 20 2020 </div>
+            <div class="d-flex">
+            <div><a href="#" class="text-white"> <i class="fas fa-edit p-2"></i></a></div>
+            <div><a href="#" class="text-white"><i class="fas fa-times p-2"></i></a></div>
+            </div>
+            </div>
+            <div class="card-body bg-light text-dark">
+            <h5 class="card-title">Viaje a San Luis de  unidad RX/000123</h5>
+            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dicta in quam, modi laborum atque minima officia error, ipsam facere adipisci dignissimos a ducimus fugit libero eius voluptatibus doloribus. Quisquam?</p>
+          </div>
+      </div>
+       
+       
+
+
+  </div>
+
+
+
+      <!-- termina calendario-->
+     
+      
+
+
+      <!-- termina seguda columna-->
+      </div>
+    
+
+    </div>
+   
+ 
+
+
+
+    </div>
+    
+</div>
+  </div>
+</div>       
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+      const button = document.querySelector('#button');
+      const tooltip = document.querySelector('#tooltip');
+
+      Popper.createPopper(button, tooltip);
+
+      $('#editar_evento').hide();
+
+      $('#plus_evento').click(function(){
+         $('#editar_evento').fadeIn();
+      });
+
+       $('#close_editar').click(function(){
+         $('#editar_evento').hide();
+      });
+
+
+
+    </script>
+</body></html>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
