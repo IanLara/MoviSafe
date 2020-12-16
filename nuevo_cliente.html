@@ -76,129 +76,91 @@
             <div class="border rounded p-3 text-center box_sucursal m-3" style="width: 80%;">
               <i class="fas fa-user-cog fa-4x m-3 rojo_obscuro"></i>
               <p class=" h5"> Editar Cliente:</p>
-              <form class="text-dark p-3 needs-validation"  novalidate  method="POST">
+              <form class="text-dark p-3">
         <div class="row">
           <div  class="col-md-12 " id="grupo__nombre" >
                
   
             
             <p class="h4">Cliente persona física:</p>
-            <div class="row">
-              <div class="col">
-
+            <div class="row py-2">
+              <div class="col-md-9">
                <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">
                     <option value="1"> Seleccione Grupo</option>
                     <option value="2"> Dep01</option>
                     <option value="3">Depo</option>                
-                </select>
-                  <button class="btn btn-primary  btn-lg m-3">Nuevo Grupo</button>
+                </select>               
               </div>
+              <div class="col-md-3">
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fas fa-plus"></i> Nuevo Grupo</button>
+                            </div>
               
             </div>
            <div class="row ">
               <div class="col-md-6 p-2">
-                <label for="name"> Nombre *</label>
-                <input type="text"  name="name" id="name" class="form-control " placeholder="Nombre" required>
-                 <div class="valid-feedback">
-                        Correcto
-                        </div>
-                         <div class="invalid-feedback">
-                        Por favor introduzca un nombre válido
-                      </div>
+                <label for="name"> Cliente *</label>
+                <input type="text"  name="name" id="name" class="form-control " placeholder="Cliente" required>
+               
                 </div>
               <div class="col-md-6 p-2">
-                <label for="telefono"> Telefono *</label>
+                <label for="telefono"> Telefono del reponsable *</label>
                 <input type="text" class="form-control" placeholder="telefono" name="puesto" required>
-                 <div class="valid-feedback">
-                        Correcto
-                        </div>
-                         <div class="invalid-feedback">
-                        Por favor introduzca un puesto válido
-                      </div>
+                 
               </div>              
             </div>
            <div class="row">
               <div class="col-md-6 p-2">
-                <label for="celular"> Celular * </label>
-                <input type="text"  name="celular"class="form-control" placeholder="Telefono" required>
-                <div class="valid-feedback">
-                        Correcto
-                        </div>
-                         <div class="invalid-feedback">
-                        Por favor introduzca un telefono válido
-                      </div>
+                <label for="celular"> Nombre del Responsable * </label>
+                <input type="text"  name="nombre_resp"class="form-control" placeholder="Nombre del Responsable" required>
+               
               </div>             
               <div class="col-md-6 p-2">
-                <label for="INE"> No. IFE (ahora INE) </label>
-                <input type="text" name="INE "class="form-control">
+                 <label for="email"> R.F.C. *</label>
+                <input type="text"  name="rfc" class="form-control" placeholder="RFC" required>
+              
               </div>
            </div>
-           <div class="row">
-              <div class="col-md-6 p-2">
-                <label for="email"> Email *</label>
-                <input type="text"  name="email" class="form-control" placeholder="Email" required>
-                <div class="valid-feedback">
-                        Correcto
-                        </div>
-                         <div class="invalid-feedback">
-                        Por favor introduzca un correo válido
-                      </div>
-              </div>               
-              <div class="col m-2">
-                <label for="Orden de compra"> Dirección </label>
-                <input type="text"  name="direccion"class="form-control" placeholder="Direcion">
-              </div>
-           </div>
+           
         </div>         
       </div>
        <!-- empieza forma facturacion--->    
      <p class="h3  mt-3">Datos de Facturación</p>
-          <div class="row">
-       <div class="col-md-6 p-2">
-        <label for="RazonSocial *">Dirección Fiscal *</label>
-        <input type="text" name="txtDireccionfiscal" id="txtDireccionfiscal" class="form-control" placeholder="Ej.:  Av. España #123" required />
-        <div class="valid-feedback">Correcto</div>
-        <div class="invalid-feedback">Por favor introduzca Dirección de Facturación</div>
+  <div class="row">
+       <div class="col-md-3 p-2">
+        <label for="RazonSocial *">C.P *</label>
+        <input type="text" name="txtDireccionfiscal" id="txtDireccionfiscal" class="form-control" placeholder="07810" required />
+        
+        
     </div>
     <div class="col-md-6 p-2">
-        <label for="txtColonia *">Colonia * </label>
-        <input type="text" name="txtColonia" id="txtColonia" class="form-control" required  placeholder="Ej.: Fracc. Reforma" />
-        <div class="valid-feedback">Correcto</div>
-        <div class="invalid-feedback">Por favor introduzca la colonia</div>
+        <label for="txtColonia *">Calle * </label>
+        <input type="text" name="txtColonia" id="txtColonia" class="form-control" required  placeholder="Ej.: Fracc. Reforma" />      
     </div>
-</div>
+     <div class="col-md-3 p-2">
+        <label for="txtCiudad *">Número *</label>
+        <input type="text" name="txtCiudad" id="txtCiudad" class="form-control"  required placeholder="01" />
+    </div>
+
+
+  </div>
+ 
+
 <div class="row">
-    <div class="col-md-6 p-2">
-        <label for="txtCiudad *">Ciudad *</label>
-        <input type="text" name="txtCiudad" id="txtCiudad" class="form-control"  required placeholder="Ej.: Veracruz" />
-        <div class="valid-feedback">Correcto</div>
-        <div class="invalid-feedback">Por favor introduzca la Ciudad</div>
+    <div class="col-md-4 p-2">
+        <label for="txtCiudad *">Delegación / Municipio *</label>
+        <input type="text" name="txtCiudad" id="txtCiudad" class="form-control"  required placeholder="Ej.: Veracruz" />     
     </div>
-    <div class="col-md-6 p-2">
+    <div class="col-md-4 p-2">
         <label for="txtEstado *">Estado * </label>
         <input type="text" name="txtEstado" id="txtEstado" class="form-control"  required placeholder="Ej.: Veracruz" />
-        <div class="valid-feedback">Correcto</div>
-        <div class="invalid-feedback">Por favor introduzca el estado</div>
+    </div>
+    <div class="col-md-4 p-2">
+        <label for="txtEstado *">País * </label>
+        <input type="text" name="txtEstado" id="txtEstado" class="form-control"  required placeholder="Ej.: Veracruz" />
     </div>
 </div>
-<div class="row">
-        <div class="col-md-3 p-2">
-        <label for="txtCp *">Código Postal *</label>
-        <input type="text" name="txtCp" id="txtCp" class="form-control"  required placeholder="Ej.: 91919" />       
-    </div>
-    <div class="col-3">
-         <div style="margin-top: 40px;">
-          <button class="btn btn-info my-sm-0" type="submit" ><i class="fas fa-search"></i> Buscar </button>
-          <button class="btn btn-danger my-sm-0" type="submit" ><i class="fas fa-search"></i></button>
-        </div>
-    </div>
-    <div class="col-md-6 p-2">
-        <label for="txtRfc *">RFC * </label>
-        <input type="text" name="txtRfc" id="txtRfc" class="form-control"  required placeholder="Ej.: MUJI701020ABC" />
-        <div class="valid-feedback">Correcto</div>
-        <div class="invalid-feedback">Por favor introduzca el RFC</div>
-    </div>
-</div>
+
 <div class="row">
   <div class="col-md-12 p-2">
           <p class="h3  text-center mt-3">Servicios</p>
@@ -275,13 +237,33 @@
   <div>    
 </div>
 
+ <!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Añadir un nuevo grupo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
+        </button>
+      </div>
+      <div class="modal-body">
+               <div class="form-group">
+            <input type="text" class="form-control">
+            
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-      
-
-   
 
 
 
@@ -295,19 +277,23 @@
 
 
  
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+   <script>
      $("#buscar_avanzado").hide();
      $( "#show_buscador" ).click(function() {
         $("#buscar_avanzado").show();
         
   });
 
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
 
   </script>
-  <script src="js/bootstrap.min.js"></script>
 
 
 
 
-</body></html>  
+      
