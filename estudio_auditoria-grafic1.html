@@ -53,12 +53,17 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
        <li class="nav-item active">
-        <a class="nav-link" href="#">Listado de Usuarios<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Estudio de auditoría<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Nuevo Usuario <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Análisis/Evaluación<span class="sr-only"></span></a>
       </li>
-      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resumen<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Documentos<span class="sr-only"></span></a>
+      </li>
     </ul>
   
   </div>
@@ -97,27 +102,6 @@
 
 
 
-<div class="rounded border"> 
-  <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <button type="button" class="btn btn-outline-secondary  btn-lg m-3 active" data-toggle="button" aria-pressed="false"> Análisis / Evaluación </button>
-    <a class="nav-link active" href="#"></a>
-  </li>
-  <li class="nav-item">
-      <button type="button" class="btn btn-outline-secondary  btn-lg m-3" data-toggle="button" aria-pressed="false"> Resumen</button>
-  </li>
-  <li class="nav-item">
-     <button type="button" class="btn btn-outline-secondary  btn-lg m-3" data-toggle="button" aria-pressed="false"> Gráfica</button>
-  </li>
-  <li class="nav-item">
-    <button type="button" class="btn btn-outline-secondary  btn-lg m-3" data-toggle="button" aria-pressed="false"> Documentos</button>
-  </li>
-  </ul>
-
-
-</div>
-
-
   <div class="text-center">
     Valoracion de resultados:
       0= N.A
@@ -129,12 +113,6 @@
 
 
   </div>
-
-
-
-
-
-
 
 
 <div class="d-flex flex-row">
@@ -161,14 +139,8 @@
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
-        <div class="d-flex flex-row">
-        <div class="p-2 mt-4" style="width: 550px;"></div>
-        <div class="p-2 m-2 text-center bg-light border border-secondary   " style="width: 140px">input</div>
-        <div class="p-2 m-2 ml-3 text-center  border border-secondary bg-light  border-secondary " style="width: 140px">60.2</div>
-        <div class="p-2 m-2 text-center bg-light border border-secondary" style="width: 90px">100%</div>
-        <div class="p-2 m-2 text-center bg-light  border border-secondary" style="width: 90px">Archivos</div>
-    </div>
-        <div class="d-flex justify-content-center">
+        
+ <div class="d-flex justify-content-center">
 <div style="width: 500px; font-size: .9em;" class="mt-2"><p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Corporis maiores maxime aliquid ab odio quod quas dolores blanditiis commodi vero fuga temporibus</p></div>
 
 <div class="p-2 mt-4" style="width: 200px;">
@@ -217,7 +189,13 @@
 </div>
 </div>
 
-<!-- texto-->
+<!-- texto preguntas y comentarios-->
+<div class="d-flex justify-content-center">
+  <div class="bd-highlight">
+    <button type="button" class="btn btn-primary btn-lg" id="preguntas1_set"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+</div>
+<section id="preguntas1">
 <div class="d-flex justify-content-center">
 <div class="p-2" style="width: 400px">
   <div class="form-group text-center">
@@ -239,6 +217,89 @@
 </div>
 </div>
 </section>
+<div class="border-bottom border-dark">&nbsp;</div>
+
+
+<div class="d-flex justify-content-center">
+<div style="width: 500px; font-size: .9em;" class="mt-2"><p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Corporis maiores maxime aliquid ab odio quod quas dolores blanditiis commodi vero fuga temporibus</p></div>
+
+<div class="p-2 mt-4" style="width: 200px;">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Si</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">No</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+      <label class="form-check-label" for="inlineRadio3">N.A.</label>
+    </div>
+</div>
+<div class="p-2 text-center" style="width: 80px">
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">R.O</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+</div>
+<div class="p-2" style="width: 70px">
+  <div class="form-group text-center">
+    <label for="exampleFormControlSelect1">O.E</label>
+      <input type="text" class="form-control">
+  </div>
+</div>
+
+<div class="p-2" style="width: 70px">
+  <div class="form-group text-center">
+    <label for="exampleFormControlSelect1">%</label>
+      <input type="text" class="form-control">
+  </div>
+</div>
+<div class="p-2" style="width: 100px">
+  <div class="form-group text-center">
+   <button type="button" class="btn btn-info mt-4"><i class="fas fa-cloud-upload-alt"></i></button>
+  </div>
+</div>
+</div>
+
+<!-- texto preguntas y comentarios-->
+<div class="d-flex justify-content-center">
+  <div class="bd-highlight">
+    <button type="button" class="btn btn-primary btn-lg" id="preguntas2_set"><i class="fas fa-ellipsis-h"></i></button>
+    </div>
+</div>
+<section id="preguntas2">
+<div class="d-flex justify-content-center">
+<div class="p-2" style="width: 400px">
+  <div class="form-group text-center">
+    <label for="exampleFormControlTextarea1">¿Qué  encontramos?</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</div>
+<div class="p-2" style="width: 400px">
+  <div class="form-group text-center">
+    <label for="exampleFormControlTextarea1">¿Qué puede suceder? </label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</div>
+<div class="p-2" style="width: 400px">
+  <div class="form-group text-center">
+    <label for="exampleFormControlSelect1">¿Qué recomendamos?</label>
+     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</div>
+</div>
+</section>
+<div class="border-bottom border-dark">&nbsp;</div>
+<!--aqui va otra pregunta-->
+
 
       </div>
     </div>
@@ -252,92 +313,20 @@
       </h2>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-           <div class="card-body">
-        <div class="d-flex flex-row">
-        <div class="p-2 mt-4" style="width: 550px;"></div>
-        <div class="p-2 m-2 text-center bg-light border border-secondary   " style="width: 140px">input</div>
-        <div class="p-2 m-2 ml-3 text-center  border border-secondary bg-light  border-secondary " style="width: 140px">60.2</div>
-        <div class="p-2 m-2 text-center bg-light border border-secondary" style="width: 90px">100%</div>
-        <div class="p-2 m-2 text-center bg-light  border border-secondary" style="width: 90px">Archivos</div>
-    </div>
-        <div class="d-flex justify-content-center">
+
+<div class="card-body">
+      
+
+<div class="d-flex justify-content-center">
+
+<!-- pregunta 1 -->
 <div style="width: 500px; font-size: .9em;" class="mt-2"><p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Corporis maiores maxime aliquid ab odio quod quas dolores blanditiis commodi vero fuga temporibus</p></div>
 
-<div class="p-2 mt-4" style="width: 200px;">
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1">Si</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2">No</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3">N.A.</label>
-    </div>
-</div>
-<div class="p-2 text-center" style="width: 80px">
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">R.O</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-</div>
-<div class="p-2" style="width: 70px">
-  <div class="form-group text-center">
-    <label for="exampleFormControlSelect1">O.E</label>
-      <input type="text" class="form-control">
-  </div>
-</div>
-
-<div class="p-2" style="width: 70px">
-  <div class="form-group text-center">
-    <label for="exampleFormControlSelect1">%</label>
-      <input type="text" class="form-control">
-  </div>
-</div>
-<div class="p-2" style="width: 100px">
-  <div class="form-group text-center">
-   <button type="button" class="btn btn-info mt-4"><i class="fas fa-cloud-upload-alt"></i></button>
-  </div>
-</div>
-</div>
-
-<!-- texto-->
-<div class="d-flex justify-content-center">
-<div class="p-2" style="width: 400px">
-  <div class="form-group text-center">
-    <label for="exampleFormControlTextarea1">¿Qué  encontramos?</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</div>
-<div class="p-2" style="width: 400px">
-  <div class="form-group text-center">
-    <label for="exampleFormControlTextarea1">¿Qué puede suceder? </label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</div>
-<div class="p-2" style="width: 400px">
-  <div class="form-group text-center">
-    <label for="exampleFormControlSelect1">¿Qué recomendamos?</label>
-     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</div>
-</div>
-</section>
 
 
 
-        
-       
-      </div>
+</div>
+
     </div>
   </div>
   <div class="card">
@@ -372,11 +361,17 @@
  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-     //$("#buscar_avanzado").hide();
-     $( "#show_buscador" ).click(function() {
-        $("#buscar_avanzado").show();
-        
-  });
+  
+  $("#preguntas1").hide();
+  $("#preguntas2").hide();
+
+    $("#preguntas1_set" ).click(function() {
+        $("#preguntas1").toggle(1000);      
+    });
+
+     $("#preguntas2_set" ).click(function() {
+        $("#preguntas2").toggle(1000);      
+    });
 
 
   </script>
