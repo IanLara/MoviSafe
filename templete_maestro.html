@@ -12,7 +12,10 @@
     <link async href="css/bootstrap.css" rel="stylesheet">
     <link  async rel="stylesheet" href="css/estilos.css">
     <!-- Custom Fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">    
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <link rel="stylesheet" href="js/popper.min.js">
+       
   </head> 
   <body class="degradado">
 
@@ -34,8 +37,8 @@
                 <a href="#"><i class="fas fa-question-circle"></i></a>
                 <a href="#" id="open_menu"><i class="fas fa-user"></i>
                 <div class="text-right" style="margin-right: 90px;" id="submenu">
-                  <a href="#"><i class="fas fa-user-shield"></i></a>
-                   <a href="#"><i class="fas fa-user-times"></i></a>
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><i class="fas fa-user-shield"></i></a>
+                   <a href="#" data-toggle="tooltip" data-placement="bottom" title="Cerrar sesión"><i class="fas fa-user-times"></i></a>
 
                 </div>                                 
                 </div>

@@ -1,21 +1,6 @@
 
-
-@font-face {
-  font-family:'Montserrat-Regular';
-  src:url(../fuentes/Montserrat-Regular.ttf);
-  font-weight: lighter;
-}
-
-@font-face {
-  font-family:'Montserrat-Bold';
-  src:url(../fuentes/Montserrat-Bold.ttf);
-  font-weight: lighter;
-}
-
-
-
 body p, h1, h2, h3{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Oswald', sans-serif;
 
 }
 body a, a:link, a:hover {
@@ -34,7 +19,10 @@ body a, a:link, a:hover {
 }
 
 
+.pregunta_auditoria{
+  width: 500px;
 
+}
 .logo_iris{
   width: 70px;
 }
@@ -94,17 +82,9 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
     font-weight: bold;
     font-size: 1.4em;
     cursor: pointer;
+   
+
 }
-
-
-.fondo_verificacion{
-  background-color: #072960;
-}
-
-.fondo_verificacion-ingreso{
-  background-color: #92180c;
-}
-
 
 .box_calendario:hover{
     background: #660000;
@@ -165,7 +145,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
     }
 
   .contendor_titulo {
-              font-family: 'Montserrat', sans-serif;
+              font-family: 'Oswald', sans-serif;
              font-size: 1em;
              margin-bottom: 10px;
              font-weight: bold;
@@ -184,8 +164,6 @@ background: linear-gradient(to bottom,  #fff 0%,#fff 100%); /* W3C, IE10+, FF16+
 margin-bottom: 100px;
 
 }
-
-
 
 
 /* Colores */

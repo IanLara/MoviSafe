@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  ">
       <div class="text-white  box_circule rounded text-center mr-2"> <i class="fas fa-clipboard-check fa-sm p-2"></i></div>
      
-  <a class="navbar-brand" href="#">Gestión de Auditoría
+  <a class="navbar-brand" href="#">Estudio de auditoría
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -52,17 +52,18 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-       <li class="nav-item active">
-        <a class="nav-link" href="#">Estudio de auditoría<span class="sr-only">(current)</span></a>
+       
+      <li class="nav-item active">
+        <a class="nav-link" href="#estudio_auditoria-evaluacion.html">Análisis/Evaluación<span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Análisis/Evaluación<span class="sr-only"></span></a>
+        <a class="nav-link" href="estudio_auditoria-resumen.html">Resumen<span class="sr-only"></span></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="estudio_auditoria-grafica.html">Gráfica<span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Resumen<span class="sr-only"></span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Documentos<span class="sr-only"></span></a>
+        <a class="nav-link" href="estudio_auditoria-documentos.html">Documentos<span class="sr-only"></span></a>
       </li>
     </ul>
   
@@ -71,39 +72,25 @@
   </div>
 <div class="container border border-light  bg-white rounded sombra">
   <div id="buscar_avanzado" class="mt-5">
-  <div class="row ">
+  <div class="row">
     <div class="col text-center my-2"><h3>Estudio Auditoria</h3></div>
   </div>
 
- <div class="d-flex justify-content-between  m-3">
-    <div class="mt-4">
-      <label for="Auditoria">Auditoria</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-     <div class="mt-4">
-      <label for="Auditoria"> Tipo de Auditoria</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-
-     <div class="mt-4">
-      <label for="Auditoria">Auditor</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-    <div class="mt-4">
-      <label for="Auditoria">Responsable de Seguridad</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
+    <div class="row text-center">
+    <div class="col-lg-2  border rounded bg-light p-2 m-2">Auditoria  <br><b>1</b></div>
+    <div class="col-lg-3 border rounded bg-light p-2 m-2">Auditor: <br> <b>Juan Ignacion Bautista Neron</b></div>
+    <div class="col-lg-3 border rounded bg-light p-2 m-2"> Tipo de Auditoría: <br> <b>Análisis de Riesgo</b></div> 
+    <div class="col-lg-3 border rounded bg-light p-2 m-2">Resp. de Seguridad: <br><b>Roque Ramirez Vicente</b></div>  
+    
   </div>
-</div>
+   
 
 
 
 
-  <div class="text-center">
-    Valoracion de resultados:
+
+  <div class="text-center m-2">
+    Valoracion de resultados: <br>
       0= N.A
       1= No existe
       2= Deficiente
@@ -124,18 +111,23 @@
 </div>
 
 
-
-
-
+<!-- analisis evaluacion-->
 <div class="accordion" id="accordionExample">
   <div class="card">
+
     <div class="card-header azul_iris_fondo " id="headingOne">
       <h2 class="mb-0">
         <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-           1 Control de entrada a las instalaciones  
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 pregunta_auditoria"><p class="h5"> 1 Control de entrada  a  las instalaciones</p></div>
+        <div class="py-3 m-2 text-center bg-dark rounded" style="width: 140px">0.0</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+      </div>
         </button>
       </h2>
-    </div>
+      
+  </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
       <div class="card-body">
@@ -296,7 +288,17 @@
   </div>
 </div>
 </div>
+
 </section>
+  <div class="container">
+    <div class="row">    
+    <div class="col-md-12">
+      <label for="recomendaciones">Recomendaciones</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    
+    </div>
+  </div>
 <div class="border-bottom border-dark">&nbsp;</div>
 <!--aqui va otra pregunta-->
 
@@ -307,8 +309,13 @@
   <div class="card">
     <div class="card-header azul_iris_fondo" id="headingTwo">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
+        <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 pregunta_auditoria"><p class="h5"> 2 Mallas o barreras perimetrales</p></div>
+        <div class="py-3 m-2 text-center bg-dark rounded" style="width: 140px">0.0</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+      </div>
         </button>
       </h2>
     </div>
@@ -332,8 +339,13 @@
   <div class="card">
     <div class="card-header azul_iris_fondo" id="headingThree">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
+        <button class="btn btn-link btn-block text-left text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 pregunta_auditoria"><p class="h5"> 3 Controles de seguridad interno</p></div>
+        <div class="py-3 m-2 text-center bg-dark rounded" style="width: 140px">0.0</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+        <div class="py-3 m-2 ml-3 text-center  bg-dark rounded" style="width: 140px">60.00</div>
+      </div>
         </button>
       </h2>
     </div>
@@ -347,7 +359,17 @@
 
 
 
+<div class="d-flex justify-content-center">
+    <div class="p-3"><a class="btn btn-primary" href="#" role="button">
+     <i class="fas fa-chart-line"></i> Calcular score</a></div>
+    <div class="p-3"><a class="btn btn-danger" href="#" role="button">
+    	<i class="fas fa-ban"></i>
+    Cancelar</a> </div>
+    <div class="p-3"><a class="btn btn-success" href="#" role="button" ><i class="fas fa-save"></i> Guadar</a> </div>
+    <div class="p-3"><a class="btn btn-info" href="#" role="button"><i class="fas fa-print"></i> Imprimir Reporte y Graficas</a> </div>
 
+
+</div>
 
 
 

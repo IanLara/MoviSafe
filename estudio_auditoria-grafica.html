@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark  ">
       <div class="text-white  box_circule rounded text-center mr-2"> <i class="fas fa-clipboard-check fa-sm p-2"></i></div>
      
-  <a class="navbar-brand" href="#">Gestión de Auditoría
+  <a class="navbar-brand" href="#">Estudio de auditoría
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -52,11 +52,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-       <li class="nav-item active">
-        <a class="nav-link" href="#">Listado de Usuarios<span class="sr-only">(current)</span></a>
+       <li class="nav-item">
+        <a class="nav-link" href="#estudio_auditoria-evaluacion.html">Análisis/Evaluación<span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Nuevo Usuario <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="estudio_auditoria-resumen.html">Resumen<span class="sr-only"></span></a>
+      </li>
+       <li class="nav-item active">
+        <a class="nav-link" href="estudio_auditoria-grafica.html">Gráfica<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="estudio_auditoria-documentos.html">Documentos<span class="sr-only"></span></a>
       </li>
       
     </ul>
@@ -66,91 +72,25 @@
   </div>
 <div class="container border border-light  bg-white rounded sombra">
   <div id="buscar_avanzado" class="mt-5">
-  <div class="row ">
-    <div class="col text-center my-2"><h3>Estudio Auditoria</h3></div>
+  <div class="row">
+    <div class="col text-center my-2"><h3>Gráfica</h3></div>
   </div>
 
- <div class="d-flex justify-content-between  m-3">
-    <div class="mt-4">
-      <label for="Auditoria">Auditoria</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-     <div class="mt-4">
-      <label for="Auditoria"> Tipo de Auditoria</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-
-     <div class="mt-4">
-      <label for="Auditoria">Auditor</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-
-    <div class="mt-4">
-      <label for="Auditoria">Responsable de Seguridad</label>
-      <input type="text" class="form-control mr-sm-2">
-    </div>
-  </div>
-</div>
-
-
-
-
-<div class="rounded border"> 
-  <ul class="nav justify-content-center">
-  <li class="nav-item">
-    <button type="button" class="btn btn-outline-secondary  btn-lg m-3 " data-toggle="button" aria-pressed="false"> Análisis / Evaluación </button>
-    <a class="nav-link active" href="#"></a>
-  </li>
-  <li class="nav-item">
-      <button type="button" class="btn btn-outline-secondary  btn-lg m-3 active" data-toggle="button" aria-pressed="false"> Resumen</button>
-  </li>
-  <li class="nav-item">
-     <button type="button" class="btn btn-outline-secondary  btn-lg m-3" data-toggle="button" aria-pressed="false"> Gráfica</button>
-  </li>
-  <li class="nav-item">
-    <button type="button" class="btn btn-outline-secondary  btn-lg m-3" data-toggle="button" aria-pressed="false"> Documentos</button>
-  </li>
-  </ul>
-
-
-</div>
-
-
-  <div class="text-center">
-    Valoracion de resultados:
-      0= N.A
-      1= No existe
-      2= Deficiente
-      3 = Regular
-      4 = Eficiente
-      5 = Óptimo
-
-
+    <div class="row text-center">
+    <div class="col-lg-2  border rounded bg-light p-2 m-2">Auditoria  <br><b>1</b></div>
+    <div class="col-lg-3 border rounded bg-light p-2 m-2">Auditor: <br> <b>Juan Ignacion Bautista Neron</b></div>
+    <div class="col-lg-3 border rounded bg-light p-2 m-2"> Tipo de Auditoría: <br> <b>Análisis de Riesgo</b></div> 
+    <div class="col-lg-3 border rounded bg-light p-2 m-2">Resp. de Seguridad: <br><b>Roque Ramirez Vicente</b></div>  
   </div>
 
 
-
-
-
-
-
-
-<div class="d-flex flex-row">
-  <div class="p-2 mt-4" style="width: 550px;"></div>
-  <div class="p-2 m-2 text-center bg-dark text-white " style="width: 140px">Marcador</div>
-  <div class="p-2 m-2 ml-3 text-center  bg-dark text-white " style="width: 140px">Puntaje</div>
-  <div class="p-2 m-2 text-center bg-dark text-white" style="width: 90px">Aplicación</div>
-  <div class="p-2 m-2 text-center bg-dark text-white" style="width: 90px">Archivos</div>
-</div>
-    <section id="resumen ">
-<div class="p-2 mt-4">  
-  <h3 class="text-center">Gráfica</h3>
-</div>
+<section id="grafica">
   <div class="d-flex justify-content-center">
     <img src="imagenes/grafica.png" alt="grafica" class="border rounded p-2 m-3">
   </div>
+
+  <div class="mt-4 mx-auto" style="width: 70%;">
+   
 <div class="d-flex justify-content-center  m-3">
     <div class="p-2">
       <button type="button" class="btn btn-info"><i class="fas fa-print"></i> Imprimir reporte y gráficos</button>
@@ -169,46 +109,34 @@
 
 
 
-       
-      </div>
-    </div>
-  </div>
+
+
+<!-- texto preguntas y comentarios-->
+
+
+
+
 
 </div>
-</div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Video</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <iframe width="460" height="315" src="https://www.youtube.com/embed/g7G-Jlxcdbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="modal-footer">
 
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-    
-      </div>
-    </div>
-  </div>
-</div> 
 
 
 
  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-     //$("#buscar_avanzado").hide();
-     $( "#show_buscador" ).click(function() {
-        $("#buscar_avanzado").show();
-        
-  });
+  
+  $("#preguntas1").hide();
+  $("#preguntas2").hide();
+
+    $("#preguntas1_set" ).click(function() {
+        $("#preguntas1").toggle(1000);      
+    });
+
+     $("#preguntas2_set" ).click(function() {
+        $("#preguntas2").toggle(1000);      
+    });
 
 
   </script>
