@@ -15,7 +15,11 @@ body a, a:link, a:hover {
 .box_sucursal:hover{
   cursor: pointer;
   background-color:#fff7f8;
-  
+}
+
+.botones_buscador{
+  width: 60px; 
+  float: left;
 }
 
 
@@ -50,7 +54,6 @@ body a, a:link, a:hover {
   background: linear-gradient(180deg, #072960 0%, rgba(255, 255, 255, 0) 100%), #92180c;
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 
 
