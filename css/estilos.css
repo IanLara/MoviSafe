@@ -27,6 +27,10 @@ body a, a:link, a:hover {
   width: 500px;
 
 }
+
+.textos_preguntas_chico{
+  font-size: .9em;
+}
 .logo_iris{
   width: 70px;
 }
