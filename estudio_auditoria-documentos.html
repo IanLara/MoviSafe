@@ -3,8 +3,7 @@
 <html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="icon_logo.gif">
     <title>MoviSafe Seguridad Privada 
   </title>
@@ -84,42 +83,39 @@
 
      <div class="d-flex justify-content-center">
   <div class="row">
-    <div class="col-12 col-lg-3 p-2">
+    <div class="col-12 col-lg-4 p-2">
        Sección:
-      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">                   
-                    <option value="2">Sección</option>
+      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">              <option value="2">Sección</option>
                     <option value="3">Control de Entrada </option>
                     <option value="4">Alberto Cortez</option>
                     <option value="5">Cliente 4</option>                  
           </select>
           
     </div>
-    <div class="col-12  col-lg-3 p-2">
+    <div class="col-12  col-lg-4 p-2">
          Pregunta:
-      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">                   
-                    <option value="2">Sección</option>
+      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">              <option value="2">Sección</option>
                     <option value="3">Control de Entrada </option>
                     <option value="4">Alberto Cortez</option>
                     <option value="5">Cliente 4</option>                  
           </select>
         </div>
-    <div class="col-12  col-lg-3 p-2">
+    <div class="col-12  col-lg-4 p-2">
        Tipo de archivo:
-      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">                   
-                    <option value="2">Video</option>
+      <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">              <option value="2">Video</option>
                     <option value="3">Documento </option>
                    
           </select>
-      </div>
-      <div class="col-12 col-lg-3 p-2">
-            
-       <input id="image" type="file" name="image" class="m-5">
-       <button id="image_alt" type="button" class="btn btn-danger">Seleccionar archivo</button>
-      
-           
-    </div>
+      </div>  
   </div>
-</div> 
+</div>
+   <div class="d-flex justify-content-center">
+          <div class="row">
+             <div class="col-12 col-lg-3 p-2">
+              <input type="file">
+        </div>
+          </div>
+       </div>
   
 
 <div class="row mt-5 mb-3 p-2">
@@ -187,10 +183,6 @@
  
   <script src="js/jquery-3.3.1.min.js"></script>
   <script>
-
-    document.getElementById('image_alt').addEventListener('click',function(){
-    document.getElementById('image').click();
-});
   
   $("#preguntas1").hide();
   $("#preguntas2").hide();
