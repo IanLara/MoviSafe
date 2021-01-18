@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="icon_logo.gif">
+    <title>MoviSafe Seguridad Privada 
+  </title>
+    <!-- Bootstrap core CSS -->
+    <link async href="css/bootstrap.css" rel="stylesheet">
+    <link  async rel="stylesheet" href="css/estilos.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">     
+  </head> 
+  <body class="degradado">
+
+          
+<div class="container bg-white text-dark sombra mt-2 rounded">
+   <div class="row">
+              <div class="col-md-4 d-none d-md-block"><img src="imagenes/logo_interior.jpg" alt="MoviSafe" class="ml-3" ></div>
+              <div class="col-sm-6 col-md-4 text-center user_text p-2"> <span class="gris_claro">Bienvenido: Jhon Doe </span> </div>  
+              <div class="col-sm-6 col-md-4 iconos_menu mt-2 ">
+                <div class="text-center">
+                <a href="#"><i class="fas fa-home"></i></a>
+               
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-question-circle"></i></a>
+                <a href="#"><i class="fas fa-user-times"></i></a>                                  
+                </div>
+              </div>   
+  </div> 
+</div>
+
+<div class="container mt-2 mb-3  rounded">
+    <nav class="navbar navbar-expand-lg navbar-dark  ">
+      <div class="text-white  box_circule rounded text-center mr-2"> <i class="fas fa-road fa-sm p-2"></i></div>
+     
+  <a class="navbar-brand" href="#">Evaluación de Rutas
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+       <li class="nav-item active">
+        <a class="nav-link" href="#">Rutas<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Caseta <span class="sr-only">(current)</span></a>
+      </li>
+      
+    </ul>
+ 
+  </div>
+</nav>
+  </div>
+<div class="container border border-light  bg-white rounded sombra">
+  <div id="buscar_avanzado" class="mt-5 ">
+  <div class="row mb-3">
+    <div class="col text-center my-2"><h3>Análisis de Ruta</h3> <br>
+      <h4>Vialidad</h4>
+    </div>
+  </div>
+  <div class="d-flex justify-content-between">
+    <div class="col-md-6 p-2">
+      <label for="">Fecha de realización del recorrido: </label>
+      <input type="date" class="form-control" rows="3">
+      </div>
+    <div class="col-md-6 p-2">
+      <label for=""> Tiempo de utilización: </label>
+      
+      <input type="text" class="form-control" rows="3">
+    </div>
+</div>
+
+
+<div class="progress mt-2 mb-3">
+  <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">20%</div>
+</div>
+
+<div class="container ">
+   <div class="row border rounded bg-warning">
+        <div class="col-12 p-2 text-center bg-primary text-white border rounded">
+          <p class="h5">
+          <i class="fas fa-question-circle fa-lg"></i> ¿En la vía se observan piedras u objetos que dificultaban la circulación?</p>
+        </div>     
+    </div>
+    <div class="row">
+          <div class="col-lg-12">        
+        <div class="d-flex justify-content-center">
+          <div class="p-2" style="width: 100px; margin-top: 31px;">
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>SI</option>
+                <option>NO</option>
+                <option>N.A</option>    
+              </select>
+          </div>
+            <div class="p-2 text-center">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Km o cruces de la observación</label>
+                <input type="text" class="form-control   text-center">
+              </div>
+            </div>
+            <div class="p-2" style="width: 90px">
+              <div class="form-group text-center">
+                <label for="exampleFormControlSelect1">Hora</label>
+                  <input type="time" class="form-control   text-center">
+              </div>
+            </div>
+            <div class="p-2" style="width: 100px ">
+            <div class="form-group text-center">
+              <label for="exampleFormControlSelect1">Multimedia</label>
+             <button type="button" class="btn btn-info "><i class="fas fa-cloud-upload-alt" data-toggle="modal" data-target="#cargar_archivo"></i></button>
+            </div>
+          </div>                
+        </div>
+     </div> 
+  </div>
+  <div class="row">
+            <div class= "col-md-4 form-group text-center">
+              <label for="exampleFormControlTextarea1">¿Qué  encontramos?</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+         
+        
+
+             <div class= "col-md-4 form-group text-center">
+              <label for="exampleFormControlTextarea1">¿Qué puede suceder? </label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+         
+         
+            <div class= "col-md-4 form-group text-center">
+              <label for="exampleFormControlSelect1">¿Qué recomendamos?</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>   
+       </div>
+    </div>
+ </div>
+   <div class="d-flex justify-content-center">
+    
+        <div class="col-12 col-lg-3">
+          <button type="button p-2" class="btn btn-danger btn-block m-2"><i class="fas fa-ban"></i> Cancelar</button>
+        </div>
+  
+        <div class="col-12 col-lg-3">
+          <button type="button p-2" class="btn btn-info btn-block m-2"><i class="fas fa-save"></i> Guardar</button> 
+        </div>
+   </div>
+
+ 
+
+  
+
+  <div class="d-flex justify-content-center">
+    <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="evaluacion_rutas1.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+
+
+</div>
+
+
+
+
+      
+
+   
+
+
+
+
+
+  
+
+
+
+
+
+
+ 
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body></html>  
