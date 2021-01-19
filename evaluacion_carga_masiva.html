@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="icon_logo.gif">
+    <title>MoviSafe Seguridad Privada 
+  </title>
+    <!-- Bootstrap core CSS -->
+    <link async href="css/bootstrap.css" rel="stylesheet">
+    <link  async rel="stylesheet" href="css/estilos.css">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> 
+      
+  </head> 
+  <body class="degradado">
+
+  
+
+
+  <!-- Content here -->
+<div class="container bg-white text-dark sombra mt-2 rounded">
+    <div class="row">
+        <div class="col-md-4 d-none d-md-block"><img src="imagenes/logo_interior.jpg" alt="MoviSafe" class="ml-3" /></div>
+        <div class="col-sm-6 col-md-4 text-center user_text p-2"><span class="gris_claro">Bienvenido: Jhon Doe </span></div>
+        <div class="col-sm-6 col-md-4 iconos_menu mt-2">
+            <div class="text-center">
+                <a href="#"><i class="fas fa-home"></i></a>
+
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-question-circle"></i></a>
+                <a href="#"><i class="fas fa-user-times"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-2 mb-3 rounded">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="text-white box_circule rounded text-center mr-2"><i class="fas fa-upload p-2"></i>    </div>
+
+        <a class="navbar-brand" href="#">Carga Masiva </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+<div class="container border border-light bg-white rounded sombra">
+    <div  class="mt-5">
+        <div class="row">
+            <div class="col text-center my-2"><h3>CARGA MASIVA DE INFORMACIÓN</h3></div>
+        </div>
+
+        <div class="row ">
+            <div class="col-12 col-lg-6  ">
+                <div class="border rounded bg-light m-2 text-center p-2">
+                    <label for="exampleFormControlSelect1 ">Catálogo:</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Departamentos</option>
+                <option>NO</option>
+                <option>N.A</option>
+            </select>
+              <button type="button" class="btn btn-primary preguntas1_set">
+                 <i class="fas fa-download"></i> Descargar en  CSV
+              </button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6  col-lg-6 ">
+                    <div class="border rounded bg-light m-2 text-center p-2">
+                          Archivo <br />
+                <input type="file" class="form-control" />
+                <button type="button" class="btn btn-primary preguntas1_set">
+                 <i class="fas fa-upload"></i> Cargar
+              </button>
+                    </div>
+            </div>
+                              
+        </div>
+
+ <div class="row text-center">
+              <div class="col  mx-auto">
+                  <div class="alert alert-success m-2" role="alert">
+                    This is a success alert—check it out!
+                 </div>
+              </div>  
+        </div>
+
+
+
+
+
+
+
+
+
+<div class="row mt-5 mb-3 p-2">
+    <div class="table-responsive">   
+       <table class="table">
+              <thead>
+                <tr>                               
+                 <th scope="col" class="text-center">Departamento ID </th>
+                  <th scope="col" class="text-center">Nombre del departamento</th>
+                  <th scope="col" class="text-center">Descripcción del Departamento</th>
+                            
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="color_rojo_suave">
+                  <td class="text-center">1</td>
+                  <td class="text-center">TI</td>
+                  <td class="text-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>             
+                </tr>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td class="text-center">TI</td>
+                  <td class="text-center"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</td>  
+                  
+                </tr>          
+              </tbody>
+        </table>   
+    </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+          
+
+
+    
+
+     
+
+
+
+ 
+
+
+
+
+
+
+
+            
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- texto preguntas y comentarios-->
+
+
+
+
+
+</div>
+
+
+
+
+
+ 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script>
+  
+  $("#preguntas1").hide();
+  $("#preguntas2").hide();
+  $("#preguntas3").hide();
+
+    $("#preguntas1_set" ).click(function() {
+        $("#preguntas1").toggle(1000);      
+    });
+
+     $("#preguntas2_set" ).click(function() {
+        $("#preguntas2").toggle(1000);      
+    });
+
+     $("#preguntas3_set" ).click(function() {
+        $("#preguntas3").toggle(1000);      
+    });
+
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+</body></html> 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Video</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/g7G-Jlxcdbc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="cargar_archivo" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Descargar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="d-flex justify-content-center">
+          <div class="p-2">
+                  Tipo de Archivo:
+                  <select name="tipo_mant" id="" class="p-2 color_rojo_suave rojo_obscuro font-weight-bold form-control">           
+                              <option value="2">Video</option>
+                              <option value="3">Cristian Castro L</option>
+                              <option value="4">Alberto Cortez</option>
+                              <option value="5">Cliente 4</option>                  
+                    </select>
+              </div>    
+          </div>
+ <div class="d-flex justify-content-center">
+    <div class="p-2">
+            Seleccionar archivo:
+           <input type="file" class="form-control">
+        </div>
+  </div>
+  <div>
+     <div class="d-flex justify-content-center">
+    <table class="table">
+              <thead>
+                <tr>                               
+                 <th scope="col" class="text-center">NOMBRE </th>
+                  <th scope="col" class="text-center">TIPO</th>
+                  <th scope="col" class="text-center">MOSTRAR</th>
+                  <th scope="col" class="text-center">DESCARGAR</th>
+                  <th scope="col" class="text-center">ELIMINAR</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="color_rojo_suave">
+                  <td class="text-center">Evidencia grafica 1</td>
+                  <td class="text-center"> <a href="clientes_detalle.html" class="rojo_obscuro">imagen</a> </td>
+                  <td class="text-center"> <a href="clientes_detalle.html" class="rojo_obscuro" data-toggle="modal" data-target="#exampleModal" ><i class="fas fa-eye"></i></a> </td>
+                  <td class="text-center"><a href="#"><i class="fas fa-cloud-download-alt" data-toggle="modal" data-target="#cargar_archivo"></i></a> </td>
+                  <td class="text-center" ><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>
+                 <tr class="">
+                  <td class="text-center">Evidencia grafica 2</td>
+                  <td class="text-center"> <a href="clientes_detalle.html" class="rojo_obscuro">imagen</a> </td>
+                  <td class="text-center"> <a href="clientes_detalle.html" class="rojo_obscuro" ><i class="fas fa-eye"></i></a> </td>
+                  <td class="text-center"><a href="#"><i class="fas fa-cloud-download-alt"></i></a> </td>
+                  <td class="text-center" ><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                </tr>             
+              </tbody>
+        </table>   
+  </div>
+  </div>
+
+
+</div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+

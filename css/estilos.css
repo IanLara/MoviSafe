@@ -213,6 +213,9 @@ margin-bottom: 100px;
 
 }
 
+.texto-largo{
+  font-size: .7em;
+}
 
 
 h1, h2, h3 {
@@ -300,4 +303,25 @@ input[type="text"]:focus {
 .inputWithIcon.inputIconBg input[type="text"]:focus + i {
   color: #fff;
   background-color: dodgerBlue;
+}
+
+.texto-largo {
+    font-size: .7em;
+  }
+
+  .preguntas1_set {
+    margin-top: 30px;
+  }
+
+@media only screen  and (max-width: 768px){
+  .texto-largo {
+    font-size: 1em;
+  }
+
+   .preguntas1_set {
+    margin-top: 5px;
+  }
+
+
+
 }
