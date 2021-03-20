@@ -71,59 +71,7 @@
     <div class="col text-center my-2"><h3>Catalogo cuentas Twitter</h3></div>
   </div>
 
-<div class="border rounded bg-light mt-3 p-3">
-  <div class="d-flex justify-content-between">
-     <div class=" p-2 text-center">
-            Flitrar Evento :
-              <button class="btn btn-warning " style="width: 130px;"><i class="fa fa-filter" aria-hidden="true"></i>Buscar</button>
-         </div>
-         <div class=" p-2 text-center">
-            Filtrar Zona :
-              <button class="btn btn-warning " style="width: 130px;"><i class="fa fa-filter" aria-hidden="true"></i>Buscar</button>
-         </div>
-  </div>
-</div>
-<div class="border rounded bg-light mt-3 p-3">
-  <div class="d-flex justify-content-center">
-      <div class="form-group m-4 "><label for="Víal">Vial</label>
-       <input type="checkbox" aria-label="vial">
-     </div> 
- 
-       <div class=" p-4 "><label for="Víal">Delictivas</label>
-          <input type="checkbox" aria-label="vial">
-        </div>
 
-        <div class="  p-4 "><label for="Víal">Protección Civil</label>
-          <input type="checkbox" aria-label="vial">
-        </div> 
-
-         <div class="  p-4 "><label for="Víal">Meteorología</label>
-          <input type="checkbox" aria-label="vial">
-        </div> 
-  </div>
- 
-   <div class="d-flex justify-content-center">
-
-     <div class=" p-4 "><label for="Víal">Carretera</label>
-          <input type="checkbox" aria-label="vial">
-        </div>
-
-        <div class="  p-4 "><label for="Víal">Sismicas</label>
-          <input type="checkbox" aria-label="vial">
-        </div>
-
-         <div class="  p-4 "><label for="Víal">País</label>
-          <input type="checkbox" aria-label="vial">
-        </div>
-
-
-         <div class="  p-4 "><label for="Víal">Programadas</label>
-          <input type="checkbox" aria-label="vial">
-        </div>   
-  </div>
-
-
-</div>
 
 </div>
 
@@ -134,16 +82,38 @@
   <li class="nav-item">
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Filtrar por Zona</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>
+ 
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    aa
+  <div class="tab-pane fade show active text-center" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <ul class="list-inline p-2">
+      <li class="list-inline-item"> <input type="checkbox"> Vial </li>
+      <li class="list-inline-item"> <input type="checkbox"> Delictivas </li>
+      <li class="list-inline-item"> <input type="checkbox"> Protección Civil</li>
+      <li class="list-inline-item"><input type="checkbox">  Meteorología</li>
+      <li class="list-inline-item"><input type="checkbox"> Carretera</li>
+      <li class="list-inline-item"><input type="checkbox"> Sismicas</li>
+      <li class="list-inline-item"><input type="checkbox"> País</li>
+      <li class="list-inline-item"><input type="checkbox">Programadas</li>
+    </ul>
+
+  <p class="text-center"><button class="btn btn-warning " style="width: 130px;"><i class="fa fa-filter" aria-hidden="true"></i>Buscar</button></p>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  <div class="tab-pane fade text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <ul class="list-inline p-2">
+      <li class="list-inline-item"> <input type="checkbox"> Zona Metro Jalisco </li>
+      <li class="list-inline-item"> <input type="checkbox"> Noreste </li>
+      <li class="list-inline-item"> <input type="checkbox"> Zona Metro Monterrey</li>
+      <li class="list-inline-item"><input type="checkbox">  Noreste</li>
+      <li class="list-inline-item"><input type="checkbox"> Valle de México</li>
+      <li class="list-inline-item"><input type="checkbox"> Centro</li>
+      <li class="list-inline-item"><input type="checkbox"> Sur</li>
+    
+    </ul>
+      <p class="text-center"><button class="btn btn-warning " style="width: 130px;"><i class="fa fa-filter" aria-hidden="true"></i>Buscar</button></p>
+
+  </div>
+  
 </div>
 
 
@@ -153,26 +123,33 @@
   <div class="bg-light p-3 mb-3 mt-2">
     
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+ 
   <div class="carousel-inner mt-2">
     <div class="carousel-item active">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>
+      <div style="width:80%" class="mx-auto text-center">
+       <p>Posible <span class="text-danger">Alerta Delictiva</span> detectada en publiación de  <span class="text-danger">Alerta Ciudadana</span> con fecha <span class="text-danger">2017-01-12 </span> y hora <span class="text-danger">01:06:18</span> en <span class="text-danger">ZONA METROPOLITANA DE JALISCO </span> las palabras clave son: 4 <br><span class="text-danger">
+      ['arma', 'arma de fuego', detonaciones de arma de fuego', reportan'] </span> con texto:</p><br>
+      Reportan detonaciones de arma de fuego en el Restaurante Scrarch Du Ouro en Av. Americas de Zapopan, precaucion en la zona.
+      <a href="#">Link: https//wwww.tweet.com</a>
+      </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>  
+       
     </div>
     <div class="carousel-item">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>  
+       <div style="width:80%" class="mx-auto text-center">
+       <p>Posible <span class="text-danger">Alerta Delictiva</span> detectada en publiación de  <span class="text-danger">Alerta Ciudadana</span> con fecha <span class="text-danger">2017-01-12 </span> y hora <span class="text-danger">01:06:18</span> en <span class="text-danger">ZONA METROPOLITANA DE JALISCO </span> las palabras clave son: 4 <br><span class="text-danger">
+      ['arma', 'arma de fuego', detonaciones de arma de fuego', reportan'] </span> con texto:</p><br>
+      Reportan detonaciones de arma de fuego en el Restaurante Scrarch Du Ouro en Av. Americas de Zapopan, precaucion en la zona.
+      <a href="#">Link: https//wwww.tweet.com</a>
+      </div>
     </div>
     <div class="carousel-item">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos rem mollitia nam aliquid aperiam dolor amet, quibusdam consequatur ipsam molestiae? Quos suscipit doloribus praesentium ipsum repudiandae cumque, nam fugiat voluptatem.</p>  
+      <div style="width:80%" class="mx-auto text-center">
+       <p>Posible <span class="text-danger">Alerta Delictiva</span> detectada en publiación de  <span class="text-danger">Alerta Ciudadana</span> con fecha <span class="text-danger">2017-01-12 </span> y hora <span class="text-danger">01:06:18</span> en <span class="text-danger">ZONA METROPOLITANA DE JALISCO </span> las palabras clave son: 4 <br><span class="text-danger">
+      ['arma', 'arma de fuego', detonaciones de arma de fuego', reportan'] </span> con texto:</p><br>
+      Reportan detonaciones de arma de fuego en el Restaurante Scrarch Du Ouro en Av. Americas de Zapopan, precaucion en la zona.
+      <a href="#">Link: https//wwww.tweet.com</a>
+      </div>  
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
